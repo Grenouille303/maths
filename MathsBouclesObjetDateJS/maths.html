@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths</title>
+    <link rel="shortcut icon" href="https://placehold.co/32" type="image/x-icon">
+</head>
+<body>
+    
+    <script>
+        let number = -15
+        console.log(`Math.abs() sert a nous retourner une valeur absolue: ${Math.abs(number)}`);
+
+        let decimal = 4.6
+        console.log(Math.round(decimal)); // ROUND  sert a arrondir une valeur
+
+        let valeurs = [3,5,7,2,9]
+        console.log(`max = ${Math.max(...valeurs)}`,`min = ${Math.min(...valeurs)}`);
+
+        function updaterandomInt(min, max) {
+            return Math.floor(Math.random()*(min - max +1))
+        }
+        
+  
+        console.log(updaterandomInt(100, 0));
+
+        let base = 6 
+        let exposant = 3
+        let racine = 25
+        let pi = Math.PI
+        let e = Math.E
+
+        console.log(e);
+        
+
+        console.log(pi);
+        
+        console.log(Math.pow(base, exposant));
+
+        console.log(Math.sqrt(racine));
+
+
+    </script>
+
+
+
+
+    
+</body>
+</html>

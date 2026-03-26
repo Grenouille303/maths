@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boucles</title>
+</head>
+
+<body>
+
+    <!-- La boucle la plus connues s'appelle FOR -->
+
+    <p>La boucle <strong>for</strong> permet de repeter un bloc de code un nombre precis de fois</p>
+
+    <!-- exemple  -->
+    <script>
+        for (let i = 0; i <= 5; i++) {
+            console.log(i)
+        }
+    </script>
+
+    <!-- LA boucle WHILE -->
+
+    <p>la boucle <strong>while</strong> repete un bloc de code tant que la condition est vraie</p>
+
+    <!-- exemple  -->
+    <!-- <script>
+        let whileContent = ""
+        let compteur = 1
+        while(compteur <= 10){
+            if(compteur % 2 === 0) whileContent `loop while` : ${counter};
+            counter++
+        }
+      </script>
+     -->
+
+    <!-- Do.... While.... -->
+    <p>la boucle <strong>Do....While</strong> execute un code au moins une fois puis continue tant que la condition est
+        vraie</p>
+    <p id="dowhileloop"></p>
+
+    <!--  exemple -->
+
+    <script>
+        let doWhileContent = '';
+        let n = 1;
+        ;
+        do {
+            doWhileContent += `nombre ${n} <br>`;
+            n++
+        } while (n <= 5) {
+            let saisie
+        }
+        document.getElementById('dowhileloop').innerHTML = doWhileContent
+    </script>
+
+    <!-- La boucle for .... of -->
+     <p>La boucle <strong>for...of</strong> permet de parcourir directement des element d'un tableau ou d'une collection</p>
+
+     <p id="fruits"></p>
+
+     <!-- Exemple -->
+
+     <script>
+        let forOfContent =""
+        let fruits = ['Pomme','Banane','Kiwi']
+
+        for (let fruit of fruits){
+            forOfContent += `fruit : ${fruit} <br>`
+        }
+        document.getElementById('fruits').innerHTML = forOfContent
+
+
+
+
+
+
+     </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
